@@ -54,7 +54,7 @@ for filename in os.listdir('./data'):
 	data.close()
 
 f = open('data.json', 'w')
-f.write(json.dumps(projects))
+f.write(json.dumps(projects, indent=4, sort_keys=True))
 f.close()
 print len(projects)
 
